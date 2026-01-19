@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Technology in Mathematics</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-left">
+    <img src="assets/logo.png" class="logo" alt="Home" onclick="goHome()">
+    <span class="brand">Tech in Mathematics</span>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+
+    <li><a href="about.html">About</a></li>
+
+    <li class="dropdown">
+      <a href="#">Topics ▾</a>
+      <ul class="dropdown-menu" id="topicsDropdown">
+        <!-- Topics loaded by JS -->
+      </ul>
+    </li>
+
+    <li><a href="faq.html">FAQ</a></li>
+
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero">
+  <h1>Technology in Mathematics</h1>
+  <p>
+    An interactive learning platform covering 24 topics designed to
+    enhance mathematics learning using modern technology.
+  </p>
+  <button onclick="location.href='topics.html'">Explore Topics</button>
+</section>
+
+<script src="js/app.js"></script>
+</body>
+</html>

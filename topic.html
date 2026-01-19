@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Topic | Technology in Mathematics</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ✅ NAVBAR (NO BACKGROUND IMAGE HERE) -->
+    <nav class="navbar">
+      <div class="nav-left">
+        <img src="assets/logo.png" class="logo" onclick="location.href='index.html'">
+        <span class="brand">Tech in Mathematics</span>
+      </div>
+    
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="topics.html">Topics</a></li>
+      </ul>
+    </nav>
+    
+    <a href="topics.html" class="back-to-topics">
+        ← Back to Topics
+      </a>
+    
+    <!-- ✅ BACKGROUND STARTS BELOW NAVBAR -->
+    <div class="topic-page-bg">
+      <div class="topic-page-overlay">
+    
+        <!-- TOPIC HEADER -->
+        <section class="page-header">
+          <h1 id="topicTitle"></h1>
+          <p id="topicFocus"></p>
+        </section>
+    
+        <!-- TABS -->
+        <section class="tabs">
+          <button onclick="showTab('overview')">Overview</button>
+          <button onclick="showTab('module')">Module</button>
+          <button onclick="showTab('video')">Video Lesson</button>
+          <button onclick="showTab('assessment')">Assessment</button>
+        </section>
+    
+        <!-- TAB CONTENT -->
+        <section class="tab-content" id="tabContent"></section>
+    
+      </div>
+    </div>
+    
+    <script src="js/topic-data.js"></script>
+    <script src="js/topic-page.js"></script>
+    </body>
+</html>

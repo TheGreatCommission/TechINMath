@@ -1,0 +1,338 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* NAVBAR */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0f172a;
+    padding: 15px 30px;
+    color: white;
+  }
+  
+  .nav-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 40px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .brand {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  /* LINKS */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-links li {
+    position: relative;
+  }
+  
+  .nav-links a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .nav-links a:hover {
+    background: #1e293b;
+    border-radius: 4px;
+  }
+  
+  /* DROPDOWN */
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    background: white;
+    color: black;
+    min-width: 220px;
+    top: 100%;
+    left: 0;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    z-index: 1000;
+  }
+  
+  .dropdown-menu li a {
+    color: black;
+    padding: 10px;
+  }
+  
+  .dropdown-menu li a:hover {
+    background: #e5e7eb;
+  }
+  
+  /* Show dropdown on hover */
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  /* HERO */
+  .hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: #f1f5f9;
+  }
+  
+  .hero h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 18px;
+  }
+  
+  .hero button {
+    margin-top: 30px;
+    padding: 14px 30px;
+    font-size: 16px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .hero button:hover {
+    background: #1d4ed8;
+  }
+
+  /* PAGE HEADER */
+.page-header {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f8fafc;
+  }
+  
+  .page-header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  /* TOPICS GRID */
+  .topics-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 40px;
+  }
+  
+  .topic-card {
+    background: white;
+    border: 1px solid #e5e7eb;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .topic-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+  
+  .topic-number {
+    font-size: 14px;
+    color: #2563eb;
+    font-weight: bold;
+  }
+  
+  .topic-card h3 {
+    margin: 10px 0;
+  }
+  
+  .topic-card p {
+    font-size: 14px;
+    color: #4b5563;
+  }
+  
+  .topic-card button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .topic-card button:hover {
+    background: #1d4ed8;
+  }
+
+  .topic-focus {
+    font-size: 13px;
+    color: #4b5563;
+    margin-top: 8px;
+  }
+
+  .topic-image img {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto 10px;
+    border: 1px solid red; /* TEMPORARY */
+  }
+
+  .tabs {
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+  }
+  
+  .tabs button {
+    padding: 10px 15px;
+    border: none;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .tabs button:hover {
+    background: #1d4ed8;
+  }
+  
+  .tab-content {
+    padding: 20px;
+    border-top: 1px solid #e5e7eb;
+  }
+  
+  .question button {
+    margin: 5px;
+  }
+
+  /* FULL PAGE BACKGROUND */
+.topic-page-bg {
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* OVERLAY */
+  .topic-page-overlay {
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.65); /* opacity */
+    color: white;
+  }
+  
+  /* CONTENT READABILITY */
+  .page-header,
+  .tabs,
+  .tab-content {
+    background: rgba(0, 0, 0, 0.4);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  /* NAVBAR HEIGHT (OPTIONAL – for spacing) */
+.navbar {
+  position: relative;
+  z-index: 10;
+}
+
+/* BACKGROUND SECTION */
+.topic-page-bg {
+  min-height: calc(100vh - 70px); /* adjust if navbar taller */
+  background-size: cover;
+  background-position: center;
+}
+
+/* OVERLAY */
+.topic-page-overlay {
+  min-height: calc(100vh - 70px);
+  background: rgba(0, 0, 0, 0.65);
+  padding-bottom: 40px;
+}
+
+/* CONTENT CARDS */
+.page-header,
+.tabs,
+.tab-content {
+  background: rgba(0, 0, 0, 0.4);
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* ===== TOPIC PAGE BACKGROUND WITH BLUR ===== */
+
+.topic-page-bg {
+    position: relative;
+    min-height: calc(100vh - 70px); /* below navbar */
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+  }
+  
+  /* blurred background layer */
+  .topic-page-bg::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: inherit; /* use same image */
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px);
+    transform: scale(1.15); /* prevents blur edges */
+    z-index: 0;
+  }
+  
+  /* dark overlay for readability */
+  .topic-page-overlay {
+    position: relative;
+    z-index: 1;
+    min-height: calc(100vh - 70px);
+    background: rgba(0, 0, 0, 0.55);
+    padding-bottom: 40px;
+  }
+  
+  /* content blocks */
+  .page-header,
+  .tabs,
+  .tab-content {
+    background: rgba(0, 0, 0, 0.4);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  /* BACK TO TOPICS BUTTON */
+.back-to-topics {
+    display: inline-block;
+    margin: 15px 20px;
+    padding: 8px 16px;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background 0.3s;
+  }
+  
+  .back-to-topics:hover {
+    background: #1d4ed8;
+  }
+
+  
